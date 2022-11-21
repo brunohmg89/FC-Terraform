@@ -1,0 +1,3 @@
+URL         : https://878336811881.signin.aws.amazon.com/console
+Access Key  : AKIA4ZAHUENUXTMKTP6Z
+Secret Key  : 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
