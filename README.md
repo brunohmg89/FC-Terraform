@@ -126,4 +126,16 @@
 
     - **Obs:** não tenho o arquivo `terraform.tfstate` porque não executei os comandos de "plan" e "apply" para não gerar custos na AWS.
 
+    - Criando um deployment com uma imagem do nginn `kubectl create deploy nginx --image=nginx`
+
+    - Destruindo tudo com o comando `terraform destroy`
+
+## Módulos
+
+1. Introdução aos módulos
+
+    - Módulo nada mais é que um agrupamento de resources
+
+2. Criando módulo de VPC
+
     -
