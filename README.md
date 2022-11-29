@@ -138,4 +138,12 @@
 
 2. Criando módulo de VPC
 
+    - Criado diretório de modules para a VPC com os arquivos main.tf, outputs.tf e variables.tf
+
+3. Iniciando módulo EKS
+
+    - Criado diretório de modules para o EKS com os arquivos main.tf, outputs.tf e variables.tf
+
+4. Finalizando módulos
+
     -
