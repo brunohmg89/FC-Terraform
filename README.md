@@ -146,4 +146,14 @@
 
 4. Finalizando módulos
 
+    - Criando arquivo `main.tf` dentro da raiz, criando o módulo de VPC
+
+    - Criando o módulo do EKS
+
+    - Criando arquivos `outputs.tf` para exportar resultados de um resource para utilização dentro dos módulos
+
+5. Criando o cluster com Modules
+
+    - Com a criação dos módulos de forma local é necessário rodar primeiro um `terraform init` para a inicialização dos módulos.
+
     -
