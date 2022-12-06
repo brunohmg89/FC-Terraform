@@ -1,3 +1,38 @@
+##################
+#    Providers   #
+##################
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+    backend "s3" {
+      bucket = "mycursofc"
+      key    = "terraform.tfstate"
+      region = "us-east-1"
+    }
+  }
+}
+
+terraform {
+  required_providers {
+    local = {
+      source  = "hashicorp/local"
+      version = "2.2.3"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+##################
+#     Modulos    #
+##################
+
 module "new-vpc" {
   source         = "./modules/vpc"
   prefix         = var.prefix

@@ -156,4 +156,22 @@
 
     - Com a criação dos módulos de forma local é necessário rodar primeiro um `terraform init` para a inicialização dos módulos.
 
-    -
+    - Documentação no site do terrform explica como publicar seu módulo
+
+6. Vendo resultado final
+
+    - Criação de todo o ambiente antes criado com resources agora com módulos
+
+## Backend remoto
+
+1. Falando sobre o tfstate
+
+    - Contém todos os detalhes que foram provisionados.
+
+    - Fazendo alterações manuais diretamentes no cloud provider acontecerá conflitos com o tfstate, então é sempre recomendado que qualquer alteração seja feita sempre pelo terraform.
+
+2. Jogando tfstate no S3
+
+    - Adicionando `backend` dentro do arquivo `main.tf`, isso transfere o arquivo tfstate que antes estava local para o bucket da AWS.
+
+## Conclusão
